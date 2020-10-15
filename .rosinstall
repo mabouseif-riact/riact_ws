@@ -1,0 +1,21 @@
+# THIS IS THE ROSINSTALL FILE FOR UR5 HIMESSE DEMO
+
+### LIBS
+- git: {local-name: libs/skiros2/skiros2, uri: 'git@github.com:RVMI/skiros2.git'}
+- git: {local-name: libs/skiros2/skiros2_std_lib, uri: 'git@github.com:RVMI/skiros2_std_lib.git'}
+- git: {local-name: libs/universal_robot, uri: 'git@github.com:ros-industrial/universal_robot.git'}
+- git: {local-name: libs/ur_modern_driver, uri: 'git@github.com:ros-industrial/ur_modern_driver.git'}
+# Branch for realsense D435, use version: tags/1.8.0 for primesense support (not compatible with new version [May 2019])
+- git: {local-name: libs/realsense, uri: 'git@github.com:intel-ros/realsense.git', version: 'development'}
+- git: {local-name: libs/ddynamic_reconfigure, uri: 'git@github.com:pal-robotics/ddynamic_reconfigure.git', version: 'kinetic-devel'}
+
+### Setup
+- git: {local-name: libs/ros1_ws_setup, uri: 'git@github.com:riact-robotics/ros1_ws_setup.git'}
+
+### ROBOTS
+- git: {local-name: robots/ros1_riact_robot, uri: 'git@github.com:riact-robotics/ros1_riact_robot.git'}
+
+### SKILLS
+- git: {local-name: libs/legacy_packages, uri: 'git@github.com:riact-robotics/legacy_packages.git'}
+
+
